@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+
+  <title>AV2</title>
+</head>
+
+<body>
+  <div class="app">
+    <h1 id="titulo">Realize seu cadastro</h1>
+    <br />
+    <label for="nome">Nome: </label>
+    <input type="text" id="nome" name="nome">
+    <br />
+    <br />
+    <label for="cpf">CPF: </label>
+    <input type="text" id="cpf" name="cpf">
+    <br />
+    <br />
+    <label for="endereco">Endereço: </label>
+    <input type="text" id="endereco" name="endereco">
+    <br />
+    <br />
+    <label for="date">Data de Nascimento: </label>
+    <input type="date" name="bday" id="i-date" max="2024-01-20">
+    <br />
+    <br />
+    <input type="submit" value="salvar" onclick='funcao1()'>
+    <br />
+    <br />
+    <h1> Imprimir valor</h1>
+    <input type="submit" value="Imprimir na tela" onclick='funcao2()'>
+    <input type="submit" value="Limpar tela" onclick='document.getElementById("dv").innerHTML = ""'>
+    <br />
+    <br />
+    <div id="dv"> </div>
+    <br />
+    <br />
+    <h1> Buscar cadastro</h1>
+    <br />
+    <br />
+    <label for="cpf">CPF: </label>
+    <input type="text" id="busca" name="busca">
+    <input type="submit" value="Imprimir na tela" onclick='funcao3()'>
+    <br />
+    <br />
+    <div id="dv1"> </div>
+    <br />
+    <br />
+    <h1> Deletar um contato</h1>
+    <br />
+    <br />
+    <label for="cpf">CPF: </label>
+    <input type="text" id="deleta" name="deleta">
+    <input type="submit" value="Deletar" onclick='funcao4()'>
+  </div>
+
+  <script src='app.js'></script>
+</body>
+
+</html>
